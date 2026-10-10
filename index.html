@@ -22,12 +22,12 @@
 <body>
 
 <h1>Hafıza Antrenörü - Gizlilik Politikası</h1>
-<p class="meta">Son güncelleme: 9 Ekim 2026 &middot; Geliştirici: Salih Görgün &middot; İletişim: <a href="mailto:salihgorgun@gmail.com">salihgorgun@gmail.com</a></p>
+<p class="meta">Son güncelleme: 10 Ekim 2026 &middot; Geliştirici: Salih Görgün &middot; İletişim: <a href="mailto:salihgorgun@gmail.com">salihgorgun@gmail.com</a></p>
 
 <p>Bu politika, "Hafıza Antrenörü" Android uygulamasının (paket adı: <code>com.salih_gorgun.hafizaantrenoru</code>) kişisel verilerinizi nasıl ele aldığını açıklar.</p>
 
 <h2>Kısaca</h2>
-<p>Uygulama, sizinle ilgili hiçbir veriyi geliştiriciye ya da bir sunucuya göndermez. Reklam yoktur, izleme ve analiz araçları yoktur, hesap açmanız gerekmez. Oyun verileriniz yalnızca kendi cihazınızda saklanır.</p>
+<p>Oyun verileriniz kendi cihazınızda saklanır. Tek istisna çevrimiçi sıralamadır: sıralama ekranını açtığınızda oyuncu adınız, ikonunuz ve puanınız genel sıralama için sunucuya gönderilir (bölüm 4). Reklam yoktur, izleme ve analiz araçları yoktur, hesap açmanız gerekmez.</p>
 
 <h2>1. Cihazınızda saklanan veriler</h2>
 <p>Uygulama aşağıdaki bilgileri yalnızca cihazınızın uygulamaya özel depolama alanında tutar. Bu bilgiler cihazdan dışarı gönderilmez:</p>
@@ -42,20 +42,23 @@
 <p>Fotoğraf seçimi için Android'in kendi sistem fotoğraf seçicisi kullanılır. Bu nedenle uygulama galerinize, depolama alanınıza, kameranıza veya mikrofonunuza erişim izni istemez. Yalnızca sizin seçtiğiniz fotoğraflar uygulamaya aktarılır.</p>
 <p>Uygulamanın kullandığı izinler:</p>
 <ul>
-  <li><b>İnternet (INTERNET)</b> ve <b>Ağ durumu / Wi-Fi durumu (ACCESS_NETWORK_STATE, ACCESS_WIFI_STATE)</b>: yalnızca yerel ağ düello modunun çalışması içindir (aşağıya bakın).</li>
+  <li><b>İnternet (INTERNET)</b> ve <b>Ağ durumu / Wi-Fi durumu (ACCESS_NETWORK_STATE, ACCESS_WIFI_STATE)</b>: yerel ağ düello modu ve çevrimiçi sıralama için kullanılır.</li>
 </ul>
 
 <h2>3. İki kişilik düello modu (yerel ağ)</h2>
 <p>Düello modunda iki cihaz, aynı Wi-Fi ağı üzerinden doğrudan birbirine bağlanır. Bu sırada oyuncu adınız, ikonunuz ve oyun sonucunuz (puan, süre, geçti/geçemedi) <b>yalnızca karşı cihaza</b> iletilir. Bu veriler hiçbir sunucuya gönderilmez ve geliştirici tarafından alınmaz. Bağlantı kapandığında karşı cihazdaki geçici bilgiler de silinir. Düello modunda mesajlaşma yoktur.</p>
 
 <h2>4. Çevrimiçi sıralama</h2>
-<p>Uygulamanın bu sürümünde çevrimiçi sıralama (sunucuya puan gönderme) <b>etkin değildir</b>; sıralama ekranı yalnızca aynı cihazdaki oyuncuları listeler. Gelecekte çevrimiçi sıralama etkinleştirilirse, bu politika önceden güncellenecek ve hangi bilgilerin (ör. oyuncu adı, ikon, puan) paylaşıldığı açıkça belirtilecektir.</p>
+<p>Sıralama ekranını açtığınızda uygulama, puanınızı genel sıralamaya ekler. Bunun için Google Firebase hizmeti kullanılır (Firebase Authentication anonim giriş ve Firebase Realtime Database). Hesap açmanız, e-posta ya da telefon numarası girmeniz gerekmez.</p>
+<p>Sıralamaya şu bilgiler gönderilir: oyuncu adınız (en fazla 20 karakter), seçtiğiniz oyuncu ikonu, toplam puanınız, geçtiğiniz seviye sayısı, son güncelleme zamanı ve Firebase'in cihazınıza atadığı rastgele anonim kimlik. Bu bilgiler sıralamayı açan diğer oyunculara gösterilir. Bu nedenle oyuncu adı olarak gerçek adınızı, soyadınızı veya kişisel bilgilerinizi kullanmamanızı öneririz.</p>
+<p>Sıralamaya katılmak istemiyorsanız sıralama ekranını açmayabilirsiniz; bu durumda puanınız gönderilmez. Sıralamadaki kaydınızın silinmesini isterseniz oyuncu adınızı ve cihazınızdaki anonim kimliğin bulunduğu kaydı belirterek <a href="mailto:salihgorgun@gmail.com">salihgorgun@gmail.com</a> adresine yazabilirsiniz. Uygulama verilerini silmeniz anonim kimliği de sıfırlar.</p>
+<p>Firebase, Google tarafından işletilir ve bağlantı sırasında IP adresi gibi standart ağ bilgilerini işleyebilir. Ayrıntılar için <a href="https://firebase.google.com/support/privacy">Firebase gizlilik bilgileri</a> sayfasına bakabilirsiniz.</p>
 
 <h2>5. Reklam, analiz ve üçüncü taraflar</h2>
 <ul>
   <li>Uygulamada reklam yoktur.</li>
   <li>Analiz, çökme raporlama veya izleme hizmeti kullanılmaz.</li>
-  <li>Verileriniz üçüncü taraflarla paylaşılmaz veya satılmaz.</li>
+  <li>Verileriniz satılmaz ve reklam amacıyla paylaşılmaz. Çevrimiçi sıralama için yalnızca Google Firebase kullanılır.</li>
   <li>Uygulama içi satın alma yoktur.</li>
 </ul>
 
@@ -77,16 +80,16 @@
 <hr>
 
 <h1 lang="en">Hafıza Antrenörü - Privacy Policy (English summary)</h1>
-<p lang="en" class="meta">Last updated: 9 October 2026 &middot; Developer: Salih Görgün &middot; Contact: <a href="mailto:salihgorgun@gmail.com">salihgorgun@gmail.com</a></p>
+<p lang="en" class="meta">Last updated: 10 October 2026 &middot; Developer: Salih Görgün &middot; Contact: <a href="mailto:salihgorgun@gmail.com">salihgorgun@gmail.com</a></p>
 
 <div lang="en">
-<p>"Hafıza Antrenörü" (package <code>com.salih_gorgun.hafizaantrenoru</code>) is a memory-training game. <b>The app does not collect, transmit or share any personal data with the developer or any server.</b></p>
+<p>"Hafıza Antrenörü" (package <code>com.salih_gorgun.hafizaantrenoru</code>) is a memory-training game. Game data is stored on your device. The only exception is the online leaderboard (below).</p>
 <ul>
   <li><b>Stored on your device only:</b> player name, chosen icon, game results and progress, and (optionally) downsized copies of photos you pick for the card-matching game. Photos are chosen with Android's system photo picker, so the app requests no storage, camera or microphone permission.</li>
   <li><b>Two-player duel:</b> two devices on the same Wi-Fi network connect directly to each other and exchange the player name, icon and game result only. Nothing goes through a server and there is no chat.</li>
-  <li><b>Online leaderboard:</b> not active in this version. If it is enabled in a future version, this policy will be updated first.</li>
-  <li><b>No ads, no analytics, no tracking, no in-app purchases, no third-party data sharing.</b></li>
-  <li><b>Permissions:</b> INTERNET, ACCESS_NETWORK_STATE and ACCESS_WIFI_STATE, used only for the local-network duel mode.</li>
+  <li><b>Online leaderboard:</b> when you open the leaderboard screen, your player name (max 20 characters), icon, total points, completed-level count, a timestamp and a random anonymous Firebase ID are sent to Google Firebase (anonymous authentication and Realtime Database) and shown to other players. No account, email or phone number is needed. Please do not use your real name as player name. To request removal, email the contact address above.</li>
+  <li><b>No ads, no analytics, no tracking, no in-app purchases; data is never sold. Firebase is the only third-party service.</b></li>
+  <li><b>Permissions:</b> INTERNET, ACCESS_NETWORK_STATE and ACCESS_WIFI_STATE, used for the local-network duel mode and the online leaderboard.</li>
   <li><b>Age:</b> the app is intended for users aged 13 and over.</li>
   <li><b>Deleting data:</b> uninstall the app or clear its data in Android settings.</li>
 </ul>
