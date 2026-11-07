@@ -11,87 +11,129 @@
   .meta { color: #5a5873; font-size: .9rem; }
   hr { margin: 2.5em 0; border: none; border-top: 1px solid #ddd; }
   a { color: #4a2fb8; }
+  table { border-collapse: collapse; width: 100%; font-size: .95rem; }
+  th, td { text-align: left; vertical-align: top; padding: 6px 8px; border-bottom: 1px solid #ddd; }
   @media (prefers-color-scheme: dark) {
     body { background: #14122a; color: #ecebf7; }
     .meta { color: #a9a6c6; }
     a { color: #b4a2ff; }
-    hr { border-top-color: #38355a; }
+    hr, th, td { border-color: #38355a; }
   }
 </style>
 </head>
 <body>
 
 <h1>Hafıza Antrenörü - Gizlilik Politikası</h1>
-<p class="meta">Son güncelleme: 10 Ekim 2026 &middot; Geliştirici: Salih Görgün &middot; İletişim: <a href="mailto:salihgorgun@gmail.com">salihgorgun@gmail.com</a></p>
+<p class="meta">Son güncelleme: 7 Kasım 2026 &middot; Geliştirici: Salih Görgün &middot; İletişim: <a href="mailto:salihgorgun@gmail.com">salihgorgun@gmail.com</a></p>
 
 <p>Bu politika, "Hafıza Antrenörü" Android uygulamasının (paket adı: <code>com.salih_gorgun.hafizaantrenoru</code>) kişisel verilerinizi nasıl ele aldığını açıklar.</p>
 
 <h2>Kısaca</h2>
-<p>Oyun verileriniz kendi cihazınızda saklanır. Tek istisna çevrimiçi sıralamadır: sıralama ekranını açtığınızda oyuncu adınız, ikonunuz ve puanınız genel sıralama için sunucuya gönderilir (bölüm 4). Reklam yoktur, izleme ve analiz araçları yoktur, hesap açmanız gerekmez.</p>
+<p>Oyun verileriniz cihazınızda saklanır. Çevrimiçi özellikler (bulut yedeği, sıralama, internet üzerinden Satranç / Dama maçları ve sohbet) için oyuncu adınız ve oyun verileriniz Google Firebase sunucularına gönderilir (bölüm 4-7). Hesap açmanız, e-posta ya da telefon numarası girmeniz gerekmez. Reklam yoktur, izleme ve analiz araçları yoktur, verileriniz satılmaz.</p>
 
 <h2>1. Cihazınızda saklanan veriler</h2>
-<p>Uygulama aşağıdaki bilgileri yalnızca cihazınızın uygulamaya özel depolama alanında tutar. Bu bilgiler cihazdan dışarı gönderilmez:</p>
+<p>Uygulama aşağıdaki bilgileri cihazınızın uygulamaya özel depolama alanında tutar:</p>
 <ul>
   <li>Oyuncu adı ve seçtiğiniz oyuncu ikonu</li>
   <li>Oyun sonuçları, puanlar, tamamlanan seviyeler ve gelişim raporu için gereken kayıtlar</li>
-  <li>Kart Eşleştirme oyununda kendi fotoğraflarınızı kullanmayı seçerseniz, seçtiğiniz fotoğrafların küçültülmüş kopyaları</li>
+  <li>Kart Eşleştirme oyununda kendi fotoğraflarınızı kullanmayı seçerseniz, seçtiğiniz fotoğrafların küçültülmüş kopyaları. <b>Fotoğraflar cihazdan dışarı gönderilmez</b>; bulut yedeğine de girmez.</li>
+  <li>Sohbette engellediğiniz oyuncuların listesi ve katıldığınız özel sohbet odaları</li>
 </ul>
-<p>Bu verileri, uygulamayı kaldırarak ya da cihazınızın ayarlarından uygulama verilerini silerek tamamen kaldırabilirsiniz. Uygulama içindeki fotoğraf listesinden de tek tek silebilirsiniz.</p>
+<p>Bu verileri, uygulamayı kaldırarak ya da cihazınızın ayarlarından uygulama verilerini silerek tamamen kaldırabilirsiniz. Uygulama içindeki fotoğraf listesinden fotoğrafları tek tek de silebilirsiniz.</p>
 
 <h2>2. Fotoğraflar ve izinler</h2>
 <p>Fotoğraf seçimi için Android'in kendi sistem fotoğraf seçicisi kullanılır. Bu nedenle uygulama galerinize, depolama alanınıza, kameranıza veya mikrofonunuza erişim izni istemez. Yalnızca sizin seçtiğiniz fotoğraflar uygulamaya aktarılır.</p>
 <p>Uygulamanın kullandığı izinler:</p>
 <ul>
-  <li><b>İnternet (INTERNET)</b> ve <b>Ağ durumu / Wi-Fi durumu (ACCESS_NETWORK_STATE, ACCESS_WIFI_STATE)</b>: yerel ağ düello modu ve çevrimiçi sıralama için kullanılır.</li>
+  <li><b>İnternet (INTERNET)</b> ve <b>Ağ durumu / Wi-Fi durumu (ACCESS_NETWORK_STATE, ACCESS_WIFI_STATE)</b>: yerel ağ düello modu ve çevrimiçi özellikler (bulut yedeği, sıralama, çevrimiçi maç, sohbet) için kullanılır.</li>
 </ul>
 
 <h2>3. İki kişilik düello modu (yerel ağ)</h2>
-<p>Düello modunda iki cihaz, aynı Wi-Fi ağı üzerinden doğrudan birbirine bağlanır. Bu sırada oyuncu adınız, ikonunuz ve oyun sonucunuz (puan, süre, geçti/geçemedi) <b>yalnızca karşı cihaza</b> iletilir. Bu veriler hiçbir sunucuya gönderilmez ve geliştirici tarafından alınmaz. Bağlantı kapandığında karşı cihazdaki geçici bilgiler de silinir. Düello modunda mesajlaşma yoktur.</p>
+<p>Düello modunda iki cihaz, aynı Wi-Fi ağı üzerinden doğrudan birbirine bağlanır. Bu sırada oyuncu adınız, ikonunuz ve oyun sonucunuz (puan, süre, geçti/geçemedi) <b>yalnızca karşı cihaza</b> iletilir. Bu veriler hiçbir sunucuya gönderilmez ve geliştirici tarafından alınmaz. Bağlantı kapandığında karşı cihazdaki geçici bilgiler de silinir.</p>
 
-<h2>4. Çevrimiçi sıralama</h2>
-<p>Sıralama ekranını açtığınızda uygulama, puanınızı genel sıralamaya ekler. Bunun için Google Firebase hizmeti kullanılır (Firebase Authentication anonim giriş ve Firebase Realtime Database). Hesap açmanız, e-posta ya da telefon numarası girmeniz gerekmez.</p>
-<p>Sıralamaya şu bilgiler gönderilir: oyuncu adınız (en fazla 20 karakter), seçtiğiniz oyuncu ikonu, toplam puanınız, geçtiğiniz seviye sayısı, son güncelleme zamanı ve Firebase'in cihazınıza atadığı rastgele anonim kimlik. Bu bilgiler sıralamayı açan diğer oyunculara gösterilir. Bu nedenle oyuncu adı olarak gerçek adınızı, soyadınızı veya kişisel bilgilerinizi kullanmamanızı öneririz.</p>
-<p>Sıralamaya katılmak istemiyorsanız sıralama ekranını açmayabilirsiniz; bu durumda puanınız gönderilmez. Sıralamadaki kaydınızın silinmesini isterseniz oyuncu adınızı ve cihazınızdaki anonim kimliğin bulunduğu kaydı belirterek <a href="mailto:salihgorgun@gmail.com">salihgorgun@gmail.com</a> adresine yazabilirsiniz. Uygulama verilerini silmeniz anonim kimliği de sıfırlar.</p>
+<h2>4. Çevrimiçi özellikler ve Firebase</h2>
+<p>Çevrimiçi özellikler Google Firebase hizmetiyle çalışır: Firebase Authentication (anonim giriş), Firebase Realtime Database ve Cloud Functions. Sunucular Avrupa Birliği'ndedir (europe-west1, Belçika). Uygulama ilk çevrimiçi işlemde Firebase'den rastgele bir <b>anonim kimlik</b> alır; bu kimlik sizi adınızla ya da e-postanızla ilişkilendirmez.</p>
+<p>Diğer oyuncular oyuncu adınızı ve ikonunuzu görebilir (sıralama, maç ve sohbet). Bu nedenle oyuncu adı olarak gerçek adınızı, soyadınızı veya kişisel bilgilerinizi kullanmamanızı öneririz.</p>
 <p>Firebase, Google tarafından işletilir ve bağlantı sırasında IP adresi gibi standart ağ bilgilerini işleyebilir. Ayrıntılar için <a href="https://firebase.google.com/support/privacy">Firebase gizlilik bilgileri</a> sayfasına bakabilirsiniz.</p>
 
-<h2>5. Reklam, analiz ve üçüncü taraflar</h2>
+<h3>4.1 Bulut yedeği</h3>
+<p>İlerlemenizi kaybetmemeniz için oyuncu profiliniz (oyuncu adı, ikon, oyun sonuçları ve seviyeler, ayarlar ve anonim kimliğinizin yeniden bağlanma anahtarı) her oyundan sonra otomatik olarak buluta yedeklenir. Yedek, yalnızca size gösterilen 12 karakterlik tahmin edilemez bir <b>yedek kodu</b> ile açılabilir; bu kodu kimseyle paylaşmayın. Fotoğraflar yedeğe girmez. Yedek, siz silinmesini isteyene kadar saklanır (bölüm 8).</p>
+
+<h3>4.2 Çevrimiçi sıralama</h3>
+<p>Sıralamaya şu bilgiler gönderilir: oyuncu adınız (en fazla 20 karakter), oyuncu ikonunuz, toplam puanınız, geçtiğiniz seviye sayısı, son güncelleme zamanı ve anonim kimliğiniz. Bu bilgiler sıralamayı açan diğer oyunculara gösterilir ve siz silinmesini isteyene kadar saklanır.</p>
+
+<h3>4.3 İnternet üzerinden Satranç ve Dama</h3>
+<p>Çevrimiçi maçta oyuncu adınız, ikonunuz, hamleleriniz ve hamle zamanları maç odasında saklanır ve rakibinize gösterilir. Maç sonucu ve maç puanınız sunucuda hesaplanır. Maç odaları maç bittikten kısa süre sonra, en geç 24 saat içinde; maç sonuç kayıtları 7 gün sonra otomatik olarak silinir.</p>
+
+<h2 id="sohbet">5. Sohbet</h2>
+<p>Sohbet 13 yaş ve üstü kullanıcılar içindir ve kullanımı isteğe bağlıdır; sohbet ilk açıldığında kurallar ve yaş sınırı onayınız istenir.</p>
+<ul>
+  <li><b>Saklanan veriler:</b> yazdığınız mesajlar, mesajın zamanı, oyuncu adınız, ikonunuz ve anonim kimliğiniz. Özel odalarda ayrıca odanın adı ve üye listesi.</li>
+  <li><b>Kimler görür:</b> genel odalardaki mesajları sohbeti kullanan tüm oyuncular; özel odalardaki mesajları yalnızca oda kodunu bilen ve odaya katılan üyeler.</li>
+  <li><b>Saklama süresi:</b> mesajlar en çok 7 gün saklanır ve sonra otomatik olarak silinir. 14 gün mesaj yazılmayan özel odalar silinir. Kendi mesajınızı istediğiniz an uygulamadan silebilirsiniz.</li>
+  <li><b>Güvenlik ve moderasyon:</b> mesajlar uygunsuz içerik (küfür, hakaret), telefon numarası, e-posta ve bağlantı için otomatik olarak denetlenir. Bir mesajı şikâyet edebilir, yazanı engelleyebilirsiniz. Şikâyet edilen ya da filtreye takılan mesajlar sohbetten hemen kaldırılır ve inceleme amacıyla en çok 30 gün saklanır. Kuralları tekrar tekrar çiğneyen oyuncuların sohbete yazması geçici olarak engellenir.</li>
+  <li>Sohbette telefon numaranızı, adresinizi, okulunuzu gibi kişisel bilgilerinizi paylaşmayın ve sohbette tanıştığınız kimseyle buluşmayı kabul etmeyin.</li>
+</ul>
+
+<h2>6. Saklama süreleri (özet)</h2>
+<table>
+  <tr><th>Veri</th><th>Nerede</th><th>Ne kadar</th></tr>
+  <tr><td>Oyun ilerlemesi, fotoğraflar</td><td>Cihazınız</td><td>Uygulamayı kaldırana kadar</td></tr>
+  <tr><td>Bulut yedeği</td><td>Firebase</td><td>Silinmesini isteyene kadar</td></tr>
+  <tr><td>Sıralama kaydı</td><td>Firebase</td><td>Silinmesini isteyene kadar</td></tr>
+  <tr><td>Çevrimiçi maç odası / sonucu</td><td>Firebase</td><td>En çok 24 saat / 7 gün</td></tr>
+  <tr><td>Sohbet mesajları</td><td>Firebase</td><td>En çok 7 gün</td></tr>
+  <tr><td>Şikâyet edilen mesajlar</td><td>Firebase</td><td>En çok 30 gün</td></tr>
+</table>
+
+<h2>7. Reklam, analiz ve üçüncü taraflar</h2>
 <ul>
   <li>Uygulamada reklam yoktur.</li>
   <li>Analiz, çökme raporlama veya izleme hizmeti kullanılmaz.</li>
-  <li>Verileriniz satılmaz ve reklam amacıyla paylaşılmaz. Çevrimiçi sıralama için yalnızca Google Firebase kullanılır.</li>
+  <li>Verileriniz satılmaz ve reklam amacıyla paylaşılmaz. Çevrimiçi özellikler için yalnızca Google Firebase kullanılır; Google verileri geliştirici adına işler.</li>
   <li>Uygulama içi satın alma yoktur.</li>
 </ul>
 
-<h2>6. Çocukların gizliliği</h2>
-<p>Uygulama 13 yaş ve üzeri kullanıcılar için hazırlanmıştır ve 13 yaşın altındaki çocuklara yönelik değildir. Uygulama zaten kişisel veri toplamaz; yine de 13 yaş altı bir çocuğun uygulamayı kullandığını fark ederseniz, cihazdaki verileri uygulamayı kaldırarak silebilirsiniz.</p>
+<h2 id="veri-silme">8. Verilerinizin silinmesi</h2>
+<p>Sunucudaki verilerinizin (Hafıza Antrenörü - Salih Görgün) silinmesini istiyorsanız:</p>
+<ol>
+  <li><a href="mailto:salihgorgun@gmail.com?subject=Haf%C4%B1za%20Antren%C3%B6r%C3%BC%20veri%20silme">salihgorgun@gmail.com</a> adresine "Hafıza Antrenörü veri silme" konulu bir e-posta gönderin.</li>
+  <li>E-postaya uygulamadaki oyuncu adınızı yazın. Varsa bulut yedeği kodunuzu da ekleyin (uygulamada "Bulut yedeği" ekranında görünür); bu, kaydınızın doğru bulunmasını sağlar.</li>
+</ol>
+<p>En geç 30 gün içinde şunlar silinir: bulut yedeğiniz, sıralamadaki kaydınız (oyuncu adı ve puan) ve varsa sohbet mesajlarınız. Silme işleminden sonra sizinle ilgili ek bir veri saklanmaz; yalnızca daha önce şikâyet edilmiş mesajlar inceleme süresi (en çok 30 gün) dolana kadar tutulabilir. Çevrimiçi maç kayıtları ve sohbet mesajları zaten kısa süre içinde (bölüm 6) otomatik olarak silinir.</p>
+<p>Sohbet mesajlarınızı uygulamada mesaja dokunup "Sil" diyerek kendiniz de hemen silebilirsiniz. Cihazınızdaki veriler uygulamayı kaldırdığınızda silinir.</p>
 
-<h2>7. Veri güvenliği</h2>
-<p>Veriler cihazınızda, Android'in uygulamaya özel depolama alanında tutulur ve diğer uygulamalar tarafından okunamaz. Cihazınızın kilit ekranı ve yedekleme ayarları da verilerinizin güvenliğini etkiler. Uygulama, Android'in otomatik yedekleme özelliği açıksa oyun verilerinin yedeklenmesine izin verir.</p>
+<h2>9. Çocukların gizliliği</h2>
+<p>Uygulama 13 yaş ve üzeri kullanıcılar için hazırlanmıştır ve 13 yaşın altındaki çocuklara yönelik değildir. 13 yaş altı bir çocuğun çevrimiçi özellikleri ya da sohbeti kullandığını fark ederseniz bize yazın; ilgili verileri sileriz.</p>
 
-<h2>8. Haklarınız</h2>
-<p>Uygulama sizinle ilgili veri toplamadığı için geliştiricide silinecek ya da düzeltilecek bir veri bulunmaz. Cihazınızdaki verileri istediğiniz zaman uygulamayı kaldırarak silebilirsiniz.</p>
+<h2>10. Veri güvenliği</h2>
+<p>Cihazdaki veriler Android'in uygulamaya özel depolama alanında tutulur ve diğer uygulamalar tarafından okunamaz. Sunucuyla tüm iletişim şifreli (HTTPS) bağlantıyla yapılır. Sunucudaki veriler erişim kurallarıyla korunur: örneğin özel sohbet odalarını yalnızca üyeleri okuyabilir, oyuncular yalnızca kendi kayıtlarını değiştirebilir. Uygulama, Android'in otomatik yedekleme özelliği açıksa oyun verilerinin cihaz yedeğine alınmasına da izin verir.</p>
 
-<h2>9. Politikadaki değişiklikler</h2>
+<h2>11. Politikadaki değişiklikler</h2>
 <p>Bu politika güncellenirse, yeni sürüm bu sayfada yayınlanır ve en üstteki "Son güncelleme" tarihi değişir.</p>
 
-<h2>10. İletişim</h2>
+<h2>12. İletişim</h2>
 <p>Sorularınız için: <a href="mailto:salihgorgun@gmail.com">salihgorgun@gmail.com</a></p>
 
 <hr>
 
 <h1 lang="en">Hafıza Antrenörü - Privacy Policy (English summary)</h1>
-<p lang="en" class="meta">Last updated: 10 October 2026 &middot; Developer: Salih Görgün &middot; Contact: <a href="mailto:salihgorgun@gmail.com">salihgorgun@gmail.com</a></p>
+<p lang="en" class="meta">Last updated: 7 November 2026 &middot; Developer: Salih Görgün &middot; Contact: <a href="mailto:salihgorgun@gmail.com">salihgorgun@gmail.com</a></p>
 
 <div lang="en">
-<p>"Hafıza Antrenörü" (package <code>com.salih_gorgun.hafizaantrenoru</code>) is a memory-training game. Game data is stored on your device. The only exception is the online leaderboard (below).</p>
+<p>"Hafıza Antrenörü" (package <code>com.salih_gorgun.hafizaantrenoru</code>) is a memory-training game. Game data is stored on your device. Online features (cloud backup, leaderboard, online chess / checkers and chat) send your player name and game data to Google Firebase (servers in the EU, europe-west1). No account, email or phone number is needed.</p>
 <ul>
-  <li><b>Stored on your device only:</b> player name, chosen icon, game results and progress, and (optionally) downsized copies of photos you pick for the card-matching game. Photos are chosen with Android's system photo picker, so the app requests no storage, camera or microphone permission.</li>
-  <li><b>Two-player duel:</b> two devices on the same Wi-Fi network connect directly to each other and exchange the player name, icon and game result only. Nothing goes through a server and there is no chat.</li>
-  <li><b>Online leaderboard:</b> when you open the leaderboard screen, your player name (max 20 characters), icon, total points, completed-level count, a timestamp and a random anonymous Firebase ID are sent to Google Firebase (anonymous authentication and Realtime Database) and shown to other players. No account, email or phone number is needed. Please do not use your real name as player name. To request removal, email the contact address above.</li>
-  <li><b>No ads, no analytics, no tracking, no in-app purchases; data is never sold. Firebase is the only third-party service.</b></li>
-  <li><b>Permissions:</b> INTERNET, ACCESS_NETWORK_STATE and ACCESS_WIFI_STATE, used for the local-network duel mode and the online leaderboard.</li>
+  <li><b>Stored on your device:</b> player name, chosen icon, game results and progress, blocked chat players, and (optionally) downsized copies of photos you pick for the card-matching game. Photos never leave your device. They are chosen with Android's system photo picker, so the app requests no storage, camera or microphone permission.</li>
+  <li><b>Local duel:</b> two devices on the same Wi-Fi network exchange the player name, icon and game result directly. Nothing goes through a server.</li>
+  <li><b>Anonymous ID:</b> on the first online action the app obtains a random anonymous Firebase ID that is not linked to your name or email.</li>
+  <li><b>Cloud backup:</b> your player profile (name, icon, results, levels, settings) is backed up automatically after each game and can only be restored with your private 12-character backup code. Kept until you ask for deletion.</li>
+  <li><b>Leaderboard:</b> player name, icon, total points, completed-level count, timestamp and anonymous ID, shown to other players. Kept until you ask for deletion.</li>
+  <li><b>Online chess / checkers:</b> player name, icon and moves are shared with your opponent. Match rooms are deleted within 24 hours, match results after 7 days.</li>
+  <li><b>Chat (ages 13+, optional):</b> messages, time, player name, icon and anonymous ID are stored and shown to other players in public rooms, or only to members in code-protected private rooms. Messages are deleted automatically after at most 7 days; you can delete your own messages at any time. Messages are automatically checked for abusive language, phone numbers, emails and links; you can report messages and block players. Reported or filtered messages are removed from chat at once and kept for review for up to 30 days.</li>
+  <li><b>No ads, no analytics, no tracking, no in-app purchases; data is never sold. Firebase (Google) is the only third-party service and processes data on the developer's behalf.</b></li>
+  <li><b>Permissions:</b> INTERNET, ACCESS_NETWORK_STATE and ACCESS_WIFI_STATE, for the local duel and the online features.</li>
   <li><b>Age:</b> the app is intended for users aged 13 and over.</li>
-  <li><b>Deleting data:</b> uninstall the app or clear its data in Android settings.</li>
+  <li id="data-deletion"><b>Deleting your data:</b> email <a href="mailto:salihgorgun@gmail.com?subject=Hafiza%20Antrenoru%20data%20deletion">salihgorgun@gmail.com</a> with the subject "Hafıza Antrenörü data deletion", your player name and, if you have it, your cloud backup code. Within 30 days your cloud backup, leaderboard entry and chat messages are deleted; previously reported messages may be kept until their review period (max. 30 days) ends. Data on your device is removed when you uninstall the app.</li>
 </ul>
 <p>Questions: <a href="mailto:salihgorgun@gmail.com">salihgorgun@gmail.com</a></p>
 </div>
